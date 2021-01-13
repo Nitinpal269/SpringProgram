@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/tx
+ http://www.springframework.org/schema/tx/spring-tx.xsd">
+ 
+ 
+ <bean class="com.spring.practice.collection.Employee" name="Employee">
+ 	<property name="name">
+ 		<value>Nitin Pal</value>
+ 	</property>
+ 	<property name="phones">
+ 		<list>
+ 			<value>9811825542</value>
+ 			<value>8700730382</value>
+ 			<value>7503447147</value>
+ 		</list>
+ 	</property>
+ 	<property name="addresses">
+ 		<set>
+ 			<value>Shiv Vihar</value>
+ 			<value>Karawal Nagar</value>
+ 			<value>Dayal Pur</value>
+ 		</set>
+ 	</property>
+ 	<property name="courses">
+ 	<map>
+ 		<entry key="java" value="3 Months"/>
+ 		<entry key="phython" value="2 Months"/>
+ 		<entry key="c++" value="1.5 Months"/>
+ 	</map>
+ 	</property>
+ 	<property name="prop1">
+ 		<props>
+ 			<prop key="driver">Oracle driver</prop>
+ 			<prop key="url">oracle:localhost/7002:xe</prop>
+ 			<prop key="username">ducat</prop>
+ 			<prop key="password">ducat</prop>
+ 		</props>
+ 	</property>
+ 	
+ 
+ 
+ </bean>
+ 
+ 
+ </beans>
