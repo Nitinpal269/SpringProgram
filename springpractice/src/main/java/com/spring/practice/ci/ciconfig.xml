@@ -12,16 +12,27 @@
  http://www.springframework.org/schema/tx
  http://www.springframework.org/schema/tx/spring-tx.xsd">
  
-<bean class="com.spring.practice.Student" id="student2" p:studentId="2324" p:studentName="Ram Singh" p:studentCity="Lucknow"/>
-
-<bean class="com.spring.practice.Student" id="student">
-	<property name="studentId" value="12345"/>
-	<property name="studentName" value="Nitin Pal"/>
-		
-	<property name="studentCity" value="Delhi"/>
-		
-	
-</bean>
-
-
+ <bean class="com.spring.practice.ci.Certificate" name="cert">
+ 	<constructor-arg value="5 Months"/>
+ 	<constructor-arg value="2 Months"/>
+ </bean>
+ 
+ <bean class="com.spring.practice.ci.Person" name="person">
+ 	<constructor-arg value="Nitin"/>
+ 	<constructor-arg value="25"/>
+ 	<constructor-arg ref="cert"/>
+ 	<constructor-arg>
+ 		<list>
+ 			<value>java</value>
+ 			<value>c</value>
+ 			<value>data structure</value>
+ 		</list>
+ 	</constructor-arg>
+ </bean>
+ 
+ 
+ 
+ 
+ 
  </beans>
+ 
